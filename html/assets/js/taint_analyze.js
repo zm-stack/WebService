@@ -44,7 +44,8 @@ function httpPost(type, name, code,target,owner) {
     if (xmlhttp!=null)
     {
         xmlhttp.onreadystatechange=state_Change;
-        xmlhttp.open("post","http://39.106.37.208:5000/api/analyze",true);
+        xmlhttp.open("post","http://39.103.152.161:8080/api/analyze",true);
+        //xmlhttp.setRequestHeader("Content-type", "application/json"); 
         //var content = "type="+type+"&code="+code+"&input="+input;
         var formData = new FormData();
         formData.append("type", type);
@@ -72,47 +73,33 @@ function httpPost(type, name, code,target,owner) {
                 // alert(xmlhttp.responseText);
                 var result=xmlhttp.responseText;
                 result = JSON.parse(result);
-                reentrancy_info = result.reentrancy[0];
-                random_info = result.Pseudo_random[0];
+                var o = eval("(" + result + ")");
+                verif_result = o.result;
 
                 var erroneousLine; 
                 unhighlightError(); 
 
 				
-                if (reentrancy_info.indexOf("Reentrancy")!=-1)
+                if (verif_result.indexOf("Error")!=-1)
                 {
-                    document.getElementById("reentrancy").innerHTML= "Found Reentrancy bug";
-                    var result_show="<p class='penal-item description'>"+reentrancy_info.replace(/[\n\r]/g,'<br>')+"</p>";
+                    document.getElementById("reentrancy").innerHTML= "Verification Fails";
+                    var result_show="<p class='penal-item description'>"+verif_result.replace(/[\n\r]/g,'<br>')+"</p>";
                     document.getElementById("collapse1").innerHTML=result_show;
                     //var num2 = reentrancy_info.replace(/[^\d]/g, '');
-                    var num2 = (/\d+/g).exec(reentrancy_info)
-                    highlightError(num2[0]-1);
+                    //var num2 = (/\d+/g).exec(reentrancy_info)
+                    var num2 = verif_result.linenumber
+                    highlightError(num2);
                 }
                 else 
                 {
-                    document.getElementById("reentrancy").innerHTML= "No Reentrancy bug found";
+                    document.getElementById("reentrancy").innerHTML= "Pass Verification";
                     document.getElementById("collapse1").innerHTML="";
                 }
 
                 var stamp = document.getElementById("contain");
                 removeClass(stamp, "hidden");
 
-                if (random_info != "")
-                {
-                    document.getElementById("random").innerHTML= "Prng Vulnerability found";
-                    var result_show="<p class='penal-item description'>"+random_info.replace(/[\n\r]/g,'<br>')+"</p>";
-                    document.getElementById("collapse2").innerHTML=result_show;
-                    var num1 = (/\d+/g).exec(random_info)
-                    highlightError(num1[0]-1);
-                }
-                else 
-                {
-                    document.getElementById("random").innerHTML= "No Prng Vulnerability found";
-                    document.getElementById("collapse2").innerHTML="";
-                }
-
-                var stamp = document.getElementById("contain");
-                removeClass(stamp, "hidden");
+                
             }
             else
             {

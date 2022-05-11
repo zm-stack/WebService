@@ -1,0 +1,100 @@
+*** Starting uWSGI 2.0.20 (64bit) on [Thu Apr  7 09:56:51 2022] ***
+compiled with version: 9.4.0 on 06 April 2022 15:05:18
+os: Linux-5.4.0-100-generic #113-Ubuntu SMP Thu Feb 3 18:43:29 UTC 2022
+nodename: qax
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /var/www/Archive/web_api
+detected binary path: /var/www/Archive/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /var/www/Archive/web_api
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 63803
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+bind(): Cannot assign requested address [core/socket.c line 769]
+*** Starting uWSGI 2.0.20 (64bit) on [Thu Apr  7 10:13:40 2022] ***
+compiled with version: 9.4.0 on 06 April 2022 15:05:18
+os: Linux-5.4.0-100-generic #113-Ubuntu SMP Thu Feb 3 18:43:29 UTC 2022
+nodename: qax
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /var/www/Archive/web_api
+detected binary path: /var/www/Archive/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /var/www/Archive/web_api
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 63803
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+bind(): Cannot assign requested address [core/socket.c line 769]
+*** Starting uWSGI 2.0.20 (64bit) on [Thu Apr  7 10:15:59 2022] ***
+compiled with version: 9.4.0 on 06 April 2022 15:05:18
+os: Linux-5.4.0-100-generic #113-Ubuntu SMP Thu Feb 3 18:43:29 UTC 2022
+nodename: qax
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /var/www/Archive/web_api
+detected binary path: /var/www/Archive/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /var/www/Archive
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 63803
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+bind(): Cannot assign requested address [core/socket.c line 769]
+*** Starting uWSGI 2.0.20 (64bit) on [Thu Apr  7 10:16:47 2022] ***
+compiled with version: 9.4.0 on 06 April 2022 15:05:18
+os: Linux-5.4.0-100-generic #113-Ubuntu SMP Thu Feb 3 18:43:29 UTC 2022
+nodename: qax
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /var/www/Archive/web_api
+detected binary path: /var/www/Archive/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /var/www/Archive
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 63803
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+bind(): Cannot assign requested address [core/socket.c line 769]
+*** Starting uWSGI 2.0.20 (64bit) on [Thu Apr  7 10:18:59 2022] ***
+compiled with version: 9.4.0 on 06 April 2022 15:05:18
+os: Linux-5.4.0-100-generic #113-Ubuntu SMP Thu Feb 3 18:43:29 UTC 2022
+nodename: qax
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /var/www/Archive/web_api
+detected binary path: /var/www/Archive/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /var/www/Archive
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 63803
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+bind(): Cannot assign requested address [core/socket.c line 769]
