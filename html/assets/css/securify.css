@@ -942,11 +942,11 @@ section {
     color: #0D62F5;
 }
 
-button {
-    text-transform: uppercase;
-    font-weight: bolder !important;
-    border-radius: 8px !important;
-}
+/*button {*/
+/*    text-transform: uppercase;*/
+/*    font-weight: bolder ;*/
+/*    border-radius: 8px;*/
+/*}*/
 
 .top-container {
     margin-top: 0px;
